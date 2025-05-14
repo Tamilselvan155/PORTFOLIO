@@ -62,7 +62,7 @@ function App() {
         <Skills />
         <Projects />
         <Experience />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
       </main>
       

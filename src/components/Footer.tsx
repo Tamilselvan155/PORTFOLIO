@@ -99,12 +99,12 @@ const Footer: React.FC = () => {
               Get a copy of my resume to learn more about my skills and experience.
             </p>
             <a
-              href="/resume.pdf"
-              download
-              className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-md hover:shadow-lg transition-colors duration-300"
+              href="/src/Asset/Profile.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300"
             >
-              <Download size={18} className="mr-3" />
-              Download CV
+              <Download size={18} /> <span>Download CV</span>
             </a>
           </div>
         </div>

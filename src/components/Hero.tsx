@@ -1,23 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { ArrowRight } from 'lucide-react';
-import { FaGithub, FaLinkedin, FaTwitter, FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt } from 'react-icons/fa'; // Added skill icons
+import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa'; // Added skill icons
 
 const Hero: React.FC = () => {
   const [greeting, setGreeting] = useState('');
 
-  useEffect(() => {
-    // Dynamic greeting based on time of day
-    const hour = new Date().getHours();
-    if (hour < 12) {
-      setGreeting('Good Morning');
-    } else if (hour < 18) {
-      setGreeting('Good Afternoon');
-    } else {
-      setGreeting('Good Evening');
-    }
-  }, []);
-
+ useEffect(() => {
+  // Dynamic greeting based on time of day
+  const hour = new Date().getHours();
+  
+  if (hour >= 5 && hour < 12) {
+    setGreeting('Good Morning');
+  } else if (hour >= 12 && hour < 17) {
+    setGreeting('Good Afternoon');
+  } else if (hour >= 17 && hour < 21) {
+    setGreeting('Good Evening');
+  } else {
+    setGreeting('Good Night');
+  }
+}, []);
   return (
     <section
       id="home"
@@ -53,7 +55,7 @@ const Hero: React.FC = () => {
                 2000,
                 'React Specialist',
                 2000,
-                'UI/UX Enthusiast',
+                'FullStack Developer',
                 2000,
               ]}
               wrapper="span"
@@ -115,6 +117,14 @@ const Hero: React.FC = () => {
           {/* Social Media Icons with Hover Effects */}
           <div className="flex space-x-6 mt-8">
             <a
+              href="https://twitter.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 transform hover:scale-110 hover:text-indigo-600"
+            >
+              <FaWhatsapp size={32} />
+            </a>
+            <a
               href="https://github.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
@@ -138,6 +148,7 @@ const Hero: React.FC = () => {
             >
               <FaTwitter size={32} />
             </a>
+            
           </div>
         </div>
       </div>

@@ -91,12 +91,13 @@ const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, mobileMenuOpen, set
 
               {/* Resume Button */}
               <a
-                href="/Tamilselvan_Resume.pdf"
-                download
-                className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300"
-              >
-                <Download size={16} /> <span>Resume</span>
-              </a>
+  href="/src/Asset/Profile.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300"
+>
+  <Download size={16} /> <span>Resume</span>
+</a>
 
               {/* Theme Toggle */}
               <button
@@ -146,12 +147,14 @@ const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, mobileMenuOpen, set
                 ))}
                 <li>
                   <a
-                    href="/Tamilselvan_Resume.pdf"
-                    download
-                    className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition"
-                  >
-                    <Download size={16} /> <span>Resume</span>
-                  </a>
+  href="/src/Asset/Profile.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300"
+>
+  <Download size={16} /> <span>Resume</span>
+</a>
+
                 </li>
               </ul>
             </div>
