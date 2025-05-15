@@ -255,7 +255,7 @@
 // export default Contact;
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Linkedin, Github } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin } from 'lucide-react';
 import { FaGithub, FaWhatsapp } from 'react-icons/fa';
 
 const Contact: React.FC = () => {
