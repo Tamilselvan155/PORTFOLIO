@@ -110,7 +110,7 @@ const Footer: React.FC = () => {
               Get a copy of my resume to know more about my skills and experience.
             </p>
             <a
-              href="/src/Asset/Profile.pdf"
+              href="https://drive.google.com/file/d/1np3opsgGcy5f2KHZzUOK3iIuxn1McyyM/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300"

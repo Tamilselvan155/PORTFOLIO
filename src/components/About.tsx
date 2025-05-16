@@ -1,5 +1,6 @@
 import React from 'react';
 import { Code, Palette, Lightbulb, Briefcase, GitBranch } from 'lucide-react';
+import myphoto from '../Asset/photo.jpeg'; // Import your image here
 
 const About: React.FC = () => {
   return (
@@ -63,7 +64,7 @@ const About: React.FC = () => {
             <div className="relative group">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-600 dark:border-blue-400 shadow-xl transition-transform group-hover:scale-105">
                 <img
-                  src="/src/Asset/photo.jpeg"
+                  src={myphoto}
                   alt="Tamil Selvan"
                   className="w-full h-full object-cover"
                 />

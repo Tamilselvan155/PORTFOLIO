@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Moon, Sun, Menu, X, Download } from 'lucide-react';
+import Dlogo from '../Asset/newlogo.png';
+import Llogo from '../Asset/black_logo.png';
+
 
 interface NavbarProps {
   theme: string;
@@ -73,13 +76,13 @@ const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, mobileMenuOpen, set
   {theme === 'dark' ? (
     <img
       className="h-14 w-14 object-contain rounded-lg" // You can change to rounded-full if you want it circular
-      src="/src/Asset/newlogo.png"
+      src={Dlogo}
       alt="logo"
     />
   ) : (
     <img
       className="h-14 w-14 object-contain rounded-lg" // You can change to rounded-full if you want it circular
-      src="/src/Asset/black_logo.png"
+      src={Llogo}
       alt="logo"
     />
   )}
@@ -114,7 +117,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, mobileMenuOpen, set
 
               {/* Resume Button */}
               <a
-  href="/src/Asset/Profile.pdf"
+  href="https://drive.google.com/file/d/1np3opsgGcy5f2KHZzUOK3iIuxn1McyyM/view?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
   className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300"
