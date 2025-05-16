@@ -42,11 +42,11 @@ const About: React.FC = () => {
             </div> */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
   {[
-    { icon: <Code size={20} />, label: 'Web Development (React, JavaScript)' },
-    { icon: <GitBranch size={20} />, label: 'Version Control (Git, GitHub)' },
+    { icon: <Code size={20} />, label: 'Web Development ( React, JavaScript )' },
+    { icon: <GitBranch size={20} />, label: 'Version Control ( Git, GitHub )' },
     // { icon: <Zap size={20} />, label: 'API Integration (REST, GraphQL)' },
-    { icon: <Lightbulb size={20} />, label: 'Backend Development (Node.js, Django)' },
-    { icon: <Palette size={20} />, label: 'Database Management (MongoDB, PostgreSQL)' },
+    { icon: <Lightbulb size={20} />, label: 'Backend Development ( Node.js, Java )' },
+    { icon: <Palette size={20} />, label: 'Database Management ( MongoDB, SQL )' },
     // { icon: <Zap size={20} />, label: 'Cloud Deployment (AWS, Docker)' },
   ].map((item, i) => (
     <div key={i} className="flex items-center space-x-2 hover:scale-105 transition-transform">

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { ArrowRight } from 'lucide-react';
-import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa'; // Added skill icons
+import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp} from 'react-icons/fa'; // Added skill icons
+
 
 const Hero: React.FC = () => {
   const [greeting, setGreeting] = useState('');
@@ -115,41 +116,44 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Social Media Icons with Hover Effects */}
-          <div className="flex space-x-6 mt-8">
-            <a
-              href="https://twitter.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 transform hover:scale-110 hover:text-indigo-600"
-            >
-              <FaWhatsapp size={32} />
-            </a>
-            <a
-              href="https://github.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 transform hover:scale-110 hover:text-indigo-600"
-            >
-              <FaGithub size={32} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 transform hover:scale-110 hover:text-indigo-600"
-            >
-              <FaLinkedin size={32} />
-            </a>
-            <a
-              href="https://twitter.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 transform hover:scale-110 hover:text-indigo-600"
-            >
-              <FaTwitter size={32} />
-            </a>
-            
-          </div>
+         <div className="flex space-x-6 mt-8">
+  <a
+    href="https://api.whatsapp.com/send?phone=9940659356&text=Hello%20TamilSelvan"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp"
+    className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 transform hover:scale-110"
+  >
+    <FaWhatsapp size={32} />
+  </a>
+  <a
+    href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=tamilselvan.c155@gmail.com"
+    aria-label="Email"
+    className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 transform hover:scale-110"
+  >
+    <FaEnvelope size={32} />
+  </a>
+
+  <a
+    href="https://github.com/Tamilselvan155"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="GitHub"
+    className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 transform hover:scale-110"
+  >
+    <FaGithub size={32} />
+  </a>
+  <a
+    href="https://linkedin.com/in/tamil-selvan-237237305"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+    className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 transform hover:scale-110"
+  >
+    <FaLinkedin size={32} />
+  </a>
+</div>
+
         </div>
       </div>
     </section>

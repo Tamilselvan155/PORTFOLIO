@@ -44,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, mobileMenuOpen, set
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll); 
   }, []);
 
   return (
@@ -58,12 +58,35 @@ const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, mobileMenuOpen, set
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/70 dark:bg-gray-900/70 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'}`}>
         <div className="container mx-auto px-4 md:px-6">
           <nav className="flex justify-between items-center">
-            <a
+            {/* Logo */}
+            {/* <a
               href="#home"
               className={`text-2xl font-extrabold tracking-wide transition-transform duration-300 ${isScrolled ? 'scale-95' : 'scale-100'} text-blue-600 dark:text-blue-400`}
             >
+               <img className='h-20 w-20 ' src="/src/Asset/logo1.png" alt="logo" />
               Tamil<span className="text-gray-800 dark:text-white">Selvan</span>
-            </a>
+            </a> */}
+            <a
+  href="#home"
+  className={`flex items-center gap-1 text-2xl font-extrabold tracking-wide transition-transform duration-300 ${isScrolled ? 'scale-95' : 'scale-100'} text-blue-600 dark:text-blue-400`}
+>
+  {theme === 'dark' ? (
+    <img
+      className="h-14 w-14 object-contain rounded-lg" // You can change to rounded-full if you want it circular
+      src="/src/Asset/newlogo.png"
+      alt="logo"
+    />
+  ) : (
+    <img
+      className="h-14 w-14 object-contain rounded-lg" // You can change to rounded-full if you want it circular
+      src="/src/Asset/black_logo.png"
+      alt="logo"
+    />
+  )}
+
+  Tamil<span className="text-gray-800 dark:text-white">Selvan</span>
+</a>
+
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">

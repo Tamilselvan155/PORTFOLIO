@@ -5,27 +5,28 @@ import {
   FaCss3Alt,
   FaNodeJs,
   FaGitAlt,
-  FaPython,
   FaJava,
   FaDatabase,
   FaJs,
 } from 'react-icons/fa';
 
 const skills = [
-  { name: 'React', icon: <FaReact size={40} className="text-blue-600 dark:text-blue-400" /> },
+  
   { name: 'HTML5', icon: <FaHtml5 size={40} className="text-orange-500 dark:text-orange-400" /> },
   { name: 'CSS3', icon: <FaCss3Alt size={40} className="text-blue-500 dark:text-blue-400" /> },
   { name: 'JavaScript', icon: <FaJs size={40} className="text-yellow-500 dark:text-yellow-300" /> },
-  { name: 'Node.js', icon: <FaNodeJs size={40} className="text-green-600 dark:text-green-400" /> },
-  { name: 'Python', icon: <FaPython size={40} className="text-blue-400 dark:text-blue-300" /> },
+  { name: 'React', icon: <FaReact size={40} className="text-blue-600 dark:text-blue-400" /> },
   { name: 'Java', icon: <FaJava size={40} className="text-red-600 dark:text-red-400" /> },
+  { name: 'Node.js', icon: <FaNodeJs size={40} className="text-green-600 dark:text-green-400" /> },
+  // { name: 'PostgreSQL', icon: <FaDatabase size={40} className="text-blue-600 dark:text-blue-400" /> },
+  { name: 'MongoDB', icon: <FaDatabase size={40} className="text-green-600 dark:text-green-400" /> },
   { name: 'SQL', icon: <FaDatabase size={40} className="text-gray-700 dark:text-gray-300" /> },
   { name: 'Git', icon: <FaGitAlt size={40} className="text-gray-800 dark:text-gray-400" /> },
 ];
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="py-20 bg-gradient-to-b from-gray-100 to-white dark:from-gray-900 dark:to-gray-800">
+    <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-900" >
       <div className="container mx-auto px-4 md:px-6">
         {/* Header */}
         <div className="text-center mb-16">

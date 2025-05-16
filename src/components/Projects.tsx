@@ -4,7 +4,6 @@ import {
   ExternalLink,
   ShoppingCart,
   ShoppingBag,
-  Utensils,
   BrainCircuit,
 } from 'lucide-react';
 

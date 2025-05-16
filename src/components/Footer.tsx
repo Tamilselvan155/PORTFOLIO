@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -17,8 +18,15 @@ const Footer: React.FC = () => {
               Software Developer specializing in creating beautiful, functional, and user-friendly web applications.
             </p>
             <div className="flex justify-center md:justify-start space-x-6">
+               <a
+                href="https://api.whatsapp.com/send?phone=9940659356&text=Hello%20TamilSelvan"
+                className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition duration-300"
+                aria-label="Email"
+              >
+                <FaWhatsapp size={24} />
+              </a>
               <a
-                href="https://github.com"
+                href="https://github.com/tamilselvan155"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition duration-300"
@@ -27,7 +35,7 @@ const Footer: React.FC = () => {
                 <Github size={24} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/tamil-selvan-237237305"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition duration-300"
@@ -36,12 +44,15 @@ const Footer: React.FC = () => {
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:tamilselvan.c155@gmail.com"
-                className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition duration-300"
-                aria-label="Email"
-              >
-                <Mail size={24} />
-              </a>
+  href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=tamilselvan.c155@gmail.com"
+  className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition duration-300"
+  aria-label="Email"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Mail size={24} />
+</a>
+
             </div>
           </div>
 
@@ -96,7 +107,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-xl font-bold mb-4 text-center md:text-left">Download Resume</h3>
             <p className="text-gray-400 mb-4 text-center md:text-left max-w-sm">
-              Get a copy of my resume to learn more about my skills and experience.
+              Get a copy of my resume to know more about my skills and experience.
             </p>
             <a
               href="/src/Asset/Profile.pdf"
