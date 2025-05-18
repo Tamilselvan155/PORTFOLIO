@@ -66,9 +66,15 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Description */}
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mb-12 animate-fade-in-delay delay-300">
-            I specialize in creating seamless, visually appealing, and highly functional web applications, with a focus on React, front-end technologies, and user-centered design.
-          </p>
+          {/* <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mb-12 animate-fade-in-delay delay-300">
+            I specialize in designing and delivering seamless, visually engaging, and highly functional web applications. With a fullstack approach, I focus on creating scalable, efficient, and user-centric solutions that effectively address complex business challenges.
+          </p> */}
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto px-4 mb-12 animate-fade-in-delay delay-300 text-center">
+  I specialize in designing and delivering seamless, visually engaging, and highly functional web applications. With a fullstack approach, I focus on creating scalable, efficient, and user-centric solutions that effectively address complex business challenges.
+</p>
+
+
+
 
           {/* Skills Section */}
           {/* <div className="w-full text-center mb-12">

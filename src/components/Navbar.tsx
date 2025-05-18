@@ -69,26 +69,29 @@ const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, mobileMenuOpen, set
                <img className='h-20 w-20 ' src="/src/Asset/logo1.png" alt="logo" />
               Tamil<span className="text-gray-800 dark:text-white">Selvan</span>
             </a> */}
-            <a
+           <a
   href="#home"
   className={`flex items-center gap-1 text-2xl font-extrabold tracking-wide transition-transform duration-300 ${isScrolled ? 'scale-95' : 'scale-100'} text-blue-600 dark:text-blue-400`}
 >
   {theme === 'dark' ? (
     <img
-      className="h-14 w-14 object-contain rounded-lg" // You can change to rounded-full if you want it circular
+      className="h-14 w-14 object-contain rounded-lg"
       src={Dlogo}
       alt="logo"
     />
   ) : (
     <img
-      className="h-14 w-14 object-contain rounded-lg" // You can change to rounded-full if you want it circular
+      className="h-14 w-14 object-contain rounded-lg"
       src={Llogo}
       alt="logo"
     />
   )}
 
-  Tamil<span className="text-gray-800 dark:text-white">Selvan</span>
+  <span className="hidden md:inline">
+    Tamil<span className="text-gray-800 dark:text-white">Selvan</span>
+  </span>
 </a>
+
 
 
             {/* Desktop Navigation */}
